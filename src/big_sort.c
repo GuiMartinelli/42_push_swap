@@ -6,7 +6,7 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 09:08:55 by guferrei          #+#    #+#             */
-/*   Updated: 2021/10/01 08:46:20 by guferrei         ###   ########.fr       */
+/*   Updated: 2021/10/05 14:05:58 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,8 +104,8 @@ void	lightning_sort(int a[], int b[], int sizea, int sizeb)
 {
 	int	x;
 
-	x = sizea + 10;
-	while (x >= 0 || !is_sorted(a, sizea))
+	x = sizea + 30;
+	while (x >= 0 && !is_sorted(a, sizea))
 	{
 		if ((a[sizea - 1] < a[sizea - 2] && a[sizea - 1] > a[0])
 			|| a[sizea - 1] == smallest_int(a, sizea)
