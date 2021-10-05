@@ -6,11 +6,13 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 08:38:02 by guferrei          #+#    #+#             */
-/*   Updated: 2021/10/01 08:46:01 by guferrei         ###   ########.fr       */
+/*   Updated: 2021/10/05 14:14:17 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
+
+//Stack operations allowed
 
 void	swap(int stack[], int size, char c)
 {

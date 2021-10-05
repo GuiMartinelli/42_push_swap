@@ -6,11 +6,13 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 09:08:55 by guferrei          #+#    #+#             */
-/*   Updated: 2021/10/05 14:05:58 by guferrei         ###   ########.fr       */
+/*   Updated: 2021/10/05 14:22:08 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
+
+//Find the position of int nbr, it search for a index where (index + 1) < nbr < (index-1)
 
 int	find_position(int a[], int size, int nbr)
 {
@@ -24,6 +26,8 @@ int	find_position(int a[], int size, int nbr)
 		x--;
 	return (x - 1);
 }
+
+//Search for situations where i can use double_rotate or double_reverse_rotate and return how many i can do
 
 int	reduce_moves(int index_a, int index_b, int sizea, int sizeb)
 {
@@ -53,6 +57,8 @@ int	reduce_moves(int index_a, int index_b, int sizea, int sizeb)
 	return (x);
 }
 
+//Execute the double_moves
+
 void	double_moves(int sizea, int sizeb, int moves)
 {
 	if (moves < 0)
@@ -72,6 +78,8 @@ void	double_moves(int sizea, int sizeb, int moves)
 		}
 	}
 }
+
+//Calculate what element of stack B takes less moves to put in the right position, and put ir on top, as well as its position
 
 void	push_b_to_a(int a[], int b[], int sizea, int sizeb)
 {
@@ -99,6 +107,8 @@ void	push_b_to_a(int a[], int b[], int sizea, int sizeb)
 	go_to_nbr(b, sizeb, (b_index + moves), 'b');
 	double_moves(sizea, sizeb, moves);
 }
+
+//Put every element in stack B, unless its already sorted, then return all of them to stack A, sorted.
 
 void	lightning_sort(int a[], int b[], int sizea, int sizeb)
 {
