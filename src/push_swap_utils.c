@@ -6,12 +6,13 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 09:31:10 by guferrei          #+#    #+#             */
-/*   Updated: 2021/10/04 13:32:30 by guferrei         ###   ########.fr       */
+/*   Updated: 2021/10/08 13:44:09 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
+//Check if a argument is not numerical
 int	is_number(const char *nbr)
 {
 	while (*nbr)
@@ -25,6 +26,7 @@ int	is_number(const char *nbr)
 	return (1);
 }
 
+//Check if a argument is duplicated
 int	is_duplicated(int stack[], int index, int x)
 {
 	while (index >= 0)
@@ -36,6 +38,7 @@ int	is_duplicated(int stack[], int index, int x)
 	return (1);
 }
 
+//Search for smallest int of a stack, and return its index
 int	smallest_nbr(int stack[], int size)
 {
 	int	nbr;
@@ -56,6 +59,7 @@ int	smallest_nbr(int stack[], int size)
 	return (index);
 }
 
+//Put the index element at the top of stack, with minimum moves as possible
 void	go_to_nbr(int stack[], int size, int index, char c)
 {
 	if (index >= size / 2)
@@ -78,6 +82,7 @@ void	go_to_nbr(int stack[], int size, int index, char c)
 	}
 }
 
+//Check if stack is sorted
 int	is_sorted(int a[], int sizea)
 {
 	sizea--;

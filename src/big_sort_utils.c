@@ -6,12 +6,13 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/30 09:08:27 by guferrei          #+#    #+#             */
-/*   Updated: 2021/10/01 08:54:23 by guferrei         ###   ########.fr       */
+/*   Updated: 2021/10/08 13:38:32 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
+//Find the smallest int of a stack
 int	smallest_int(int stack[], int size)
 {
 	int	nbr;
@@ -29,6 +30,7 @@ int	smallest_int(int stack[], int size)
 	return (nbr);
 }
 
+//Find the biggest int of a stack
 int	biggest_int(int stack[], int size)
 {
 	int	nbr;
@@ -46,6 +48,7 @@ int	biggest_int(int stack[], int size)
 	return (nbr);
 }
 
+//Calculate minimum moves to put index_a and index_b at the top of stackA and stackB
 int	calculate_moves(int index_a, int index_b, int sizea, int sizeb)
 {
 	int	ret;
@@ -62,12 +65,14 @@ int	calculate_moves(int index_a, int index_b, int sizea, int sizeb)
 	return (ret);
 }
 
+//Execute double rotate
 void	double_rotate(int a[], int b[], int sizea, int sizeb)
 {
 	rotate(a, sizea, 0);
 	rotate(b, sizeb, 'r');
 }
 
+//Execute double reverse rotate
 void	double_rev_rotate(int a[], int b[], int sizea, int sizeb)
 {
 	rev_rotate(a, sizea, 0);

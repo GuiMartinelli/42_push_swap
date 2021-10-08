@@ -6,12 +6,13 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 09:36:13 by guferrei          #+#    #+#             */
-/*   Updated: 2021/10/08 13:15:04 by guferrei         ###   ########.fr       */
+/*   Updated: 2021/10/08 13:50:21 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/checker.h"
 
+//Check if argument is numerical
 int	is_number(const char *nbr)
 {
 	while (*nbr)
@@ -25,6 +26,7 @@ int	is_number(const char *nbr)
 	return (1);
 }
 
+//Check if argument is duplicated
 int	is_duplicated(int stack[], int index, int x)
 {
 	while (index >= 0)
@@ -36,6 +38,7 @@ int	is_duplicated(int stack[], int index, int x)
 	return (1);
 }
 
+//Check if stack a is sorted
 int	is_sorted(int a[], int sizea)
 {
 	sizea--;
@@ -49,6 +52,7 @@ int	is_sorted(int a[], int sizea)
 	return (1);
 }
 
+//Parse the input to integers, and check for errors
 int	make_stack(char *argv[], int stack[], int argc)
 {
 	int	x;
@@ -68,6 +72,7 @@ int	make_stack(char *argv[], int stack[], int argc)
 	return (x);
 }
 
+//Check if instruction exists and its formated right
 int	valid_act(char *str)
 {
 	if (!ft_strncmp(str, "pa", 3) || !ft_strncmp(str, "pb", 3)

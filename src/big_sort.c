@@ -6,12 +6,13 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 09:08:55 by guferrei          #+#    #+#             */
-/*   Updated: 2021/10/05 14:05:58 by guferrei         ###   ########.fr       */
+/*   Updated: 2021/10/08 13:42:12 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
+//Find the index where nbr will be sorted at stack
 int	find_position(int a[], int size, int nbr)
 {
 	int	x;
@@ -25,6 +26,7 @@ int	find_position(int a[], int size, int nbr)
 	return (x - 1);
 }
 
+//Calculate where it can change 2 moves for 1. Example = ra + rb => rr
 int	reduce_moves(int index_a, int index_b, int sizea, int sizeb)
 {
 	int	x;
@@ -53,6 +55,7 @@ int	reduce_moves(int index_a, int index_b, int sizea, int sizeb)
 	return (x);
 }
 
+//Execute double moves the right times
 void	double_moves(int sizea, int sizeb, int moves)
 {
 	if (moves < 0)
@@ -73,6 +76,7 @@ void	double_moves(int sizea, int sizeb, int moves)
 	}
 }
 
+//Calculate and int at b it can sort in a with the less possible moves, and put it at top
 void	push_b_to_a(int a[], int b[], int sizea, int sizeb)
 {
 	int	index;
@@ -100,6 +104,7 @@ void	push_b_to_a(int a[], int b[], int sizea, int sizeb)
 	double_moves(sizea, sizeb, moves);
 }
 
+//Put stack a elements at b until stack a is sorted, then put stack b elements back at a, sorted
 void	lightning_sort(int a[], int b[], int sizea, int sizeb)
 {
 	int	x;

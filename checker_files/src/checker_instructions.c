@@ -6,12 +6,13 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 13:21:40 by guferrei          #+#    #+#             */
-/*   Updated: 2021/10/08 13:13:54 by guferrei         ###   ########.fr       */
+/*   Updated: 2021/10/08 13:51:14 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/checker.h"
 
+//Execute swap instructions
 void	do_swap(char *buffer, int sizea, int sizeb)
 {
 	if (!ft_strncmp(buffer, "sa", 2))
@@ -25,6 +26,7 @@ void	do_swap(char *buffer, int sizea, int sizeb)
 	}
 }
 
+//Execute push instructions
 int	do_push(char *buffer, int sizea, int sizeb)
 {
 	if (!ft_strncmp(buffer, "pa", 2))
@@ -42,6 +44,7 @@ int	do_push(char *buffer, int sizea, int sizeb)
 	return (sizea);
 }
 
+//Execute rotate and reverse_rotate instuctions
 void	do_rotate(char *buffer, int sizea, int sizeb)
 {
 	if (!ft_strncmp(buffer, "rra", 4))

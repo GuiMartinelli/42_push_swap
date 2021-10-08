@@ -6,12 +6,13 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 07:37:52 by guferrei          #+#    #+#             */
-/*   Updated: 2021/10/01 08:47:03 by guferrei         ###   ########.fr       */
+/*   Updated: 2021/10/08 13:47:29 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
+//With 3 numbers, you have 6 possible cases of order, this function finds which one is
 int	check_order(int a[])
 {
 	if (a[2] > a[1] && a[2] < a[0])
@@ -30,12 +31,14 @@ int	check_order(int a[])
 		return (-1);
 }
 
+//Sort a stack with 2 elements
 void	sort_2(int a[])
 {
 	if (a[1] > a[0])
 		swap(a, 2, 'a');
 }
 
+//Check whats the initial order of the given stack, and sort
 void	sort_3(int a[], int sizea)
 {
 	int	x;
@@ -64,6 +67,7 @@ void	sort_3(int a[], int sizea)
 		rev_rotate(a, sizea, 'a');
 }
 
+//Pull the 2 smallest elements to stack b, sort stack a 3 remaining elements, then pull back the elements at b to a
 void	sort_5(int a[], int b[], int sizea, int sizeb)
 {
 	go_to_nbr(a, sizea, smallest_nbr(a, sizea), 'a');

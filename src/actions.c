@@ -6,12 +6,15 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 08:38:02 by guferrei          #+#    #+#             */
-/*   Updated: 2021/10/06 21:17:25 by guferrei         ###   ########.fr       */
+/*   Updated: 2021/10/08 13:36:11 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
+//Stack Operations allowed
+
+//Swap the first two elements at the top of the stack
 void	swap(int stack[], int size, char c)
 {
 	int	temp;
@@ -26,6 +29,7 @@ void	swap(int stack[], int size, char c)
 		ft_printf("s%c\n", c);
 }
 
+//Put the top element in the bottom of the stack
 void	rotate(int stack[], int size, char c)
 {
 	int	temp;
@@ -44,6 +48,7 @@ void	rotate(int stack[], int size, char c)
 		ft_printf("r%c\n", c);
 }
 
+//Put the bottom element at the top of a stack
 void	rev_rotate(int stack[], int size, char c)
 {
 	int	temp;
@@ -64,6 +69,8 @@ void	rev_rotate(int stack[], int size, char c)
 		ft_printf("rr%c\n", c);
 }
 
+
+//Push the top element of stack1 at the top of stack2
 int	push(int stack1[], int stack2[], int size1, int size2)
 {
 	size2--;

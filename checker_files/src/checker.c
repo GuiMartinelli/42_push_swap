@@ -6,16 +6,18 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 09:33:27 by guferrei          #+#    #+#             */
-/*   Updated: 2021/10/06 21:15:40 by guferrei         ###   ########.fr       */
+/*   Updated: 2021/10/08 13:52:33 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/checker.h"
 
+//Read the input, check if is a valid instruction and send it to be executed
 void	testing(int sizea, int sizeb, int argc)
 {
 	char	*buffer;
 
+	//get_next_line function reads STDIN, return one instruction at time in buffer, and returns buffer len until reachs EoF
 	while (get_next_line(0, &buffer))
 	{
 		if (!valid_act(buffer))

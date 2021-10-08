@@ -6,12 +6,13 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 09:41:17 by guferrei          #+#    #+#             */
-/*   Updated: 2021/10/05 13:52:13 by guferrei         ###   ########.fr       */
+/*   Updated: 2021/10/08 13:51:29 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/checker.h"
 
+//Stack operations
 void	checker_s(int stack[], int size)
 {
 	int	temp;

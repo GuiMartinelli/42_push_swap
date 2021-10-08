@@ -6,12 +6,13 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 07:21:57 by guferrei          #+#    #+#             */
-/*   Updated: 2021/10/01 08:47:09 by guferrei         ###   ########.fr       */
+/*   Updated: 2021/10/08 13:47:52 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
+//Parse the input to integers, and check for errors
 int	make_stack(char *argv[], int stack[], int argc)
 {
 	int	x;
