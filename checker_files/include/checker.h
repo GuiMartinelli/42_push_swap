@@ -6,7 +6,7 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 09:32:03 by guferrei          #+#    #+#             */
-/*   Updated: 2021/10/06 14:44:52 by guferrei         ###   ########.fr       */
+/*   Updated: 2021/10/06 21:13:25 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,6 @@ void	do_swap(char *buffer, int sizea, int sizeb);
 int		do_push(char *buffer, int sizea, int sizeb);
 void	do_rev_rotate(char *buffer, int sizea, int sizeb);
 void	do_rotate(char *buffer, int sizea, int sizeb);
+int		valid_act(char *str);
 
 #endif

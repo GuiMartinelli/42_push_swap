@@ -6,7 +6,7 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 09:36:13 by guferrei          #+#    #+#             */
-/*   Updated: 2021/10/05 13:52:23 by guferrei         ###   ########.fr       */
+/*   Updated: 2021/10/08 13:15:04 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,11 +62,21 @@ int	make_stack(char *argv[], int stack[], int argc)
 		if (!is_duplicated(stack, (x - 1), stack[x])
 			|| !is_number(argv[(y - x)]) || (stack[x] == 0
 				&& ft_strncmp(argv[(y - x)], "0", 1)))
-		{
-			write(2, "Error\n", 7);
 			return (-1);
-		}
 		x++;
 	}
 	return (x);
+}
+
+int	valid_act(char *str)
+{
+	if (!ft_strncmp(str, "pa", 3) || !ft_strncmp(str, "pb", 3)
+		|| !ft_strncmp(str, "sa", 3) || !ft_strncmp(str, "sb", 3)
+		|| !ft_strncmp(str, "ss", 3) || !ft_strncmp(str, "ra", 3)
+		|| !ft_strncmp(str, "rb", 3) || !ft_strncmp(str, "rr", 3)
+		|| !ft_strncmp(str, "rra", 4) || !ft_strncmp(str, "rrb", 4)
+		|| !ft_strncmp(str, "rrr", 4))
+		return (1);
+	else
+		return (0);
 }

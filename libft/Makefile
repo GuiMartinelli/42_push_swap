@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: guferrei <guferrei@intranet.com>           +#+  +:+       +#+         #
+#    By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/20 22:14:47 by guferrei          #+#    #+#              #
-#    Updated: 2021/09/15 14:14:46 by guferrei         ###   ########.fr        #
+#    Updated: 2021/10/06 15:11:37 by guferrei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,7 @@ BO = $(FTB:.c=.o)
 
 all: $(NAME)
 
-$(NAME) : $(FT)
+$(NAME):
 	gcc ${CFLAGS} -c ${FT}
 	ar rc $(NAME) ${OBJ}
 

@@ -6,7 +6,7 @@
 /*   By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 13:21:40 by guferrei          #+#    #+#             */
-/*   Updated: 2021/10/06 14:48:48 by guferrei         ###   ########.fr       */
+/*   Updated: 2021/10/08 13:13:54 by guferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int	do_push(char *buffer, int sizea, int sizeb)
 
 void	do_rotate(char *buffer, int sizea, int sizeb)
 {
-	if (!ft_strncmp(buffer, "rra", 3))
+	if (!ft_strncmp(buffer, "rra", 4))
 		checker_rr(t_checker_stacks.stack_a, sizea);
 	else if (!ft_strncmp(buffer, "rrb", 3))
 		checker_rr(t_checker_stacks.stack_b, sizeb);

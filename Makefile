@@ -6,7 +6,7 @@
 #    By: guferrei <guferrei@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/15 09:44:02 by guferrei          #+#    #+#              #
-#    Updated: 2021/10/06 13:31:00 by guferrei         ###   ########.fr        #
+#    Updated: 2021/10/06 15:21:04 by guferrei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,15 +24,15 @@ LIBFT = libft/libft.a
 
 FLAGS = -Wall -Werror -Wextra
 
-all: $(NAME) bonus
+all: $(NAME)
 
-$(NAME): $(LIBFT) $(FILES)
+$(NAME): $(LIBFT)
 	gcc $(FLAGS) $(FILES) $(LIBFT) -o $(NAME)
 
-bonus: $(LIBFT) $(BONUS)
+bonus: $(LIBFT)
 	gcc $(FLAGS) $(BONUS) $(LIBFT) -o $(NAME_BONUS)
 
-$(LIBFT): $(LIBFT)
+$(LIBFT):
 	make -C libft
 	make clean -C libft
 
@@ -44,6 +44,3 @@ fclean: clean
 	rm libft/libft.a
 
 re: fclean all
-
-norma:
-	norminette $(FILES)
