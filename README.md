@@ -5,8 +5,9 @@ It is only allowed to use two stacks and at the end, stack A must be sorted, fro
 
 ## USAGE
 
-Run `make` on to compile. Execute it with a list of integers, and it will return what instructions, based on the allowed stack operations, you need to sort it  
-`./push_swap 3 5 1`. If you try to sort duplicated numbers, some data that isn't a numerical or a int overflow, it will return **Error**
+Run `make` on to compile. Execute it with a list of integers, and it will return what instructions, based on the allowed stack operations, you need to sort it.  
+Run `./push_swap 3 5 1`, to sort a stack with 3, 5 and 1.  
+If you try to sort duplicated numbers, some data that isn't a numerical or a int overflow, it will return **Error**
 
 You can also see the algorithm sorting with the [push_swap_visualizer](https://github.com/o-reo/push_swap_visualizer).  
 Execute it with ```python3 pyviz.py `ruby -e "puts (-50..50).to_a.shuffle.join(' ')"``` to sort a stack of 100 numbers between -50 and 50. You can change those values to use with a bigger or smaller stack.
