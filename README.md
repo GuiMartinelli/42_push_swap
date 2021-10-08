@@ -3,7 +3,7 @@
 This project consists of ordering a stack, using a limited set of operations, with as few instructions as possible. 
 It is only allowed to use two stacks and at the end, stack A must be sorted, from top to bottom.
 
-# SMALL SORT
+## SMALL SORT
 
 With 3 elements, it must sort with no more than 3 instructions. Since you have only 6 possible order with 3 elements, 
 it just find out which one it is, and make execute the sorting.
@@ -11,7 +11,7 @@ it just find out which one it is, and make execute the sorting.
 With 5 elements, it must sorte with no more than 12 instructions. This program push the smallest int at Stack A to B, then the next smallest int, 
 sort the remaining 3 elements, and push the 2 elements at B to A. 5 elements are sorted average on 7 instructions.
 
-# BIG SORT
+## BIG SORT
 
 Here the fun begins. I test several algorithms before coding this one. The main problem is that algorithms aren't so easy to implement using 
 stacks and these very specifics instructions. Then, after studing some other projects, i developed an algorithm that will **search for the least number of moves**
@@ -25,11 +25,11 @@ to sort an elements, until the Stack A is sorted. I called it **Lightning Sort**
 
 With this algorithm, it can sort 100 elements in average ~610 instructions, and 500 in average ~5450 instructions.
 
-# RESOURCES
+## RESOURCES
 
 [Push_Swap](https://github.com/paulahemsi/push_swap) by [paulahensi](https://github.com/paulahemsi);  
 [Push_Swap](https://github.com/laisarena/push_swap) by [laisarena](https://github.com/laisarena);  
-[Push_Swap](https://github.com/alchrist42/push_swap_v2) by [alchrist42](https://github.com/alchrist42)**(The Wheel Algorithm);  
+[Push_Swap](https://github.com/alchrist42/push_swap_v2) by [alchrist42](https://github.com/alchrist42)**(The Wheel Algorithm)**;  
 [Wheel Algorithm Video](https://www.youtube.com/watch?v=JnbILLTLhOk&t=208s);  
 [VBranznik Explanation about Wheel Algorithm](https://github.com/VBrazhnik/Push_swap/wiki/Algorithm);  
 
