@@ -12,7 +12,7 @@ If you try to sort duplicated numbers, some data that isn't a numerical or a int
 You can also see the algorithm sorting with the [push_swap_visualizer](https://github.com/o-reo/push_swap_visualizer).  
 Execute it with ```python3 pyviz.py `ruby -e "puts (-50..50).to_a.shuffle.join(' ')"``` to sort a stack of 100 numbers between -50 and 50. You can change the values to use with a bigger or smaller stack.
 
-Run `make bonus` to compile the **checker** program. It will check the instructions delivered by **push_swap** and check if they sort the stack.  
+Run `make bonus` to compile the **checker** program. It will read the instructions delivered by **push_swap** and check if they sort the stack.  
 To use it run `./push_swap 3 5 1 | ./checker 3 5 1`. It should display **OK** if the instructions are correct, if the stack still unsorted, it will display **KO**.  
 If you give it duplicated numbers, some data that isn't a numerical or a int overflow, it will return **Error**. The arguments must be the same to **push_swap** and the **checker**
 
