@@ -32,6 +32,7 @@ With this algorithm, it can sort 100 elements in average ~610 instructions, and 
 [Push_Swap](https://github.com/alchrist42/push_swap_v2) by [alchrist42](https://github.com/alchrist42)**(The Wheel Algorithm)**;  
 [Wheel Algorithm Video](https://www.youtube.com/watch?v=JnbILLTLhOk&t=208s);  
 [VBranznik Explanation about Wheel Algorithm](https://github.com/VBrazhnik/Push_swap/wiki/Algorithm);  
+[Push_Swap Guide for small sort](https://medium.com/@jamierobertdawson/push-swap-the-least-amount-of-moves-with-two-stacks-d1e76a71789a);  
 
 ## TOOLS
 
