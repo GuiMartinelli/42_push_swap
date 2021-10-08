@@ -27,13 +27,13 @@ With this algorithm, it can sort 100 elements in average ~610 instructions, and 
 
 # RESOURCES
 
-[Push_Swap by Paula Hensi](https://github.com/paulahemsi/push_swap);  
-[Push_Swap by Lais Arena](https://github.com/laisarena/push_swap);  
-[Push_Swap by Alchrist](https://github.com/alchrist42/push_swap_v2) **(The Wheel Algorithm);  
+[Push_Swap](https://github.com/paulahemsi/push_swap) by [paulahensi](https://github.com/paulahemsi);  
+[Push_Swap](https://github.com/laisarena/push_swap) by [laisarena](https://github.com/laisarena);  
+[Push_Swap](https://github.com/alchrist42/push_swap_v2) by [alchrist42](https://github.com/alchrist42)**(The Wheel Algorithm);  
 [Wheel Algorithm Video](https://www.youtube.com/watch?v=JnbILLTLhOk&t=208s);  
 [VBranznik Explanation about Wheel Algorithm](https://github.com/VBrazhnik/Push_swap/wiki/Algorithm);  
 
 #TOOLS
 
-[Push_Swap Tester by Lais Arena](https://github.com/laisarena/push_swap_tester);  
-[Push_Swap Simulator](https://github.com/o-reo/push_swap_visualizer) by [p-reo](https://github.com/o-reo);  
+[Push_Swap Tester](https://github.com/laisarena/push_swap_tester) by [laisarena](https://github.com/laisarena);  
+[Push_Swap Simulator](https://github.com/o-reo/push_swap_visualizer) by [o-reo](https://github.com/o-reo);  
