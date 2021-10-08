@@ -17,23 +17,23 @@ Here the fun begins. I test several algorithms before coding this one. The main 
 stacks and these very specifics instructions. Then, after studing some other projects, i developed an algorithm that will **search for the least number of moves**
 to sort an elements, until the Stack A is sorted. I called it **Lightning Sort**(quite presumptuous) since it always search for the easiest path to act.
 
-First, it **pulls** every element to **B**, except for smallest and biggest elements, and those that are already sorted.
-Then, It goes through every element at **B** and calculates what would be its index at Stack **A** to make it sorted, and whats its index at **B**.
-It calculates how many moves i need to do to sort every element, then i choose the one with less moves, and **pull** back to Stack **A** at the right index.
-It also check if i can **rotate** or **reverse rotate** both stack, making 2 instructions into one.
-Repeat this until Stack **B** is empty, then put the smallest element at Stack **A** at the top, and is sorted.
+- First, it **pulls** every element to **B**, except for smallest and biggest elements, and those that are already sorted.
+- Then, It goes through every element at **B** and calculates what would be its index at Stack **A** to make it sorted, and whats its index at **B**.
+- It calculates how many moves i need to do to sort every element, then i choose the one with less moves, and **pull** back to Stack **A** at the right index.
+- It also check if i can **rotate** or **reverse rotate** both stack, making 2 instructions into one.
+- Repeat this until Stack **B** is empty, then put the smallest element at Stack **A** at the top, and is sorted.
 
 With this algorithm, it can sort 100 elements in average ~610 instructions, and 500 in average ~5450 instructions.
 
 # RESOURCES
 
-[Push_Swap by Paula Hensi](https://github.com/paulahemsi/push_swap)
-[Push_Swap by Lais Arena](https://github.com/laisarena/push_swap)
-[Push_Swap by Alchrist](https://github.com/alchrist42/push_swap_v2) **(The Wheel Algorithm)
-[Wheel Algorithm Video](https://www.youtube.com/watch?v=JnbILLTLhOk&t=208s)
-[VBranznik Explanation about Wheel Algorithm](https://github.com/VBrazhnik/Push_swap/wiki/Algorithm)
+[Push_Swap by Paula Hensi](https://github.com/paulahemsi/push_swap);
+[Push_Swap by Lais Arena](https://github.com/laisarena/push_swap);
+[Push_Swap by Alchrist](https://github.com/alchrist42/push_swap_v2) **(The Wheel Algorithm);
+[Wheel Algorithm Video](https://www.youtube.com/watch?v=JnbILLTLhOk&t=208s);
+[VBranznik Explanation about Wheel Algorithm](https://github.com/VBrazhnik/Push_swap/wiki/Algorithm);
 
 #TOOLS
 
-[Push_Swap Tester by Lais Arena](https://github.com/laisarena/push_swap_tester)
-[Push_Swap Simulator](https://github.com/o-reo/push_swap_visualizer) by [p-reo](https://github.com/o-reo)
+[Push_Swap Tester by Lais Arena](https://github.com/laisarena/push_swap_tester);
+[Push_Swap Simulator](https://github.com/o-reo/push_swap_visualizer) by [p-reo](https://github.com/o-reo);
