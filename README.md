@@ -5,7 +5,7 @@ It is only allowed to use two stacks and at the end, stack A must be sorted, fro
 
 ## USAGE
 
-Run `make` to compile. Execute it with a list of integers, and it will return what instructions, based on the allowed stack operations, you need to sort it.  
+Run `make` to compile. Execute it with a list of integers, and it will return which instructions, based on the allowed stack operations, you need to sort it.  
 Run `./push_swap 3 5 1`, to sort a stack with 3, 5 and 1.  
 If you try to sort duplicated numbers, some data that isn't a numerical or a int overflow, it will return **Error**
 
