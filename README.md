@@ -33,7 +33,7 @@ With this algorithm, it can sort 100 elements in average ~610 instructions, and 
 [Wheel Algorithm Video](https://www.youtube.com/watch?v=JnbILLTLhOk&t=208s);  
 [VBranznik Explanation about Wheel Algorithm](https://github.com/VBrazhnik/Push_swap/wiki/Algorithm);  
 
-#TOOLS
+## TOOLS
 
 [Push_Swap Tester](https://github.com/laisarena/push_swap_tester) by [laisarena](https://github.com/laisarena);  
 [Push_Swap Simulator](https://github.com/o-reo/push_swap_visualizer) by [o-reo](https://github.com/o-reo);  
